@@ -21,12 +21,6 @@
         <module>user</module>
     </modules>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <common.version>1.0-SNAPSHOT</common.version>
-    </properties>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -43,53 +37,59 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.2.3.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.github.xiaoymin</groupId>-->
+<!--                <artifactId>knife4j-spring-boot-starter</artifactId>-->
+<!--                <version>3.0.2</version>-->
+<!--            </dependency>-->
 
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>3.0.2</version>
-            </dependency>
+<!--            &lt;!&ndash;fastjson&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>fastjson</artifactId>-->
+<!--                <version>1.2.75</version>-->
+<!--            </dependency>-->
 
-            <!--fastjson-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.75</version>
-            </dependency>
+<!--            &lt;!&ndash;commons&ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.commons</groupId>-->
+<!--                <artifactId>commons-lang3</artifactId>-->
+<!--                <version>3.11</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.commons</groupId>-->
+<!--                <artifactId>commons-collections4</artifactId>-->
+<!--                <version>4.4</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>commons-io</groupId>-->
+<!--                <artifactId>commons-io</artifactId>-->
+<!--                <version>2.8.0</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>commons-codec</groupId>-->
+<!--                <artifactId>commons-codec</artifactId>-->
+<!--                <version>1.15</version>-->
+<!--            </dependency>-->
 
-            <!--commons-->
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>3.11</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-collections4</artifactId>
-                <version>4.4</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>2.8.0</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.15</version>
-            </dependency>
-
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.22</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.18</version>
-                <optional>true</optional>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>mysql</groupId>-->
+<!--                <artifactId>mysql-connector-java</artifactId>-->
+<!--                <version>8.0.22</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.projectlombok</groupId>-->
+<!--                <artifactId>lombok</artifactId>-->
+<!--                <version>1.18.18</version>-->
+<!--                <optional>true</optional>-->
+<!--            </dependency>-->
 
         </dependencies>
     </dependencyManagement>
