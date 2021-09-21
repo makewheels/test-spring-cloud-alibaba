@@ -5,9 +5,9 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "user-service")
+@FeignClient("user-service")
 public interface UserService {
 
-    @RequestMapping("getUser")
+    @RequestMapping("user-service/getUser")
     User getUserById(@RequestParam String userId);
 }

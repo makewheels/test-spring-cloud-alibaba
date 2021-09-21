@@ -10,7 +10,7 @@ import javax.annotation.Resource;
 
 @RestController
 public class ShopController {
-    @Autowired
+    @Resource
     private UserService userService;
 
     @RequestMapping("getUserInShopServiceByUserService")
