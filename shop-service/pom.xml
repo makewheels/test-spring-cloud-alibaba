@@ -12,6 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>shop-service</name>
     <description>shop-service</description>
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
@@ -49,10 +50,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.eg.test-spring-cloud-alibaba</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.eg.test-spring-cloud-alibaba</groupId>
+            <artifactId>user-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
