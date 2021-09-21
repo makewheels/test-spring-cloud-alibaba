@@ -1,4 +1,4 @@
-package com.eg.bean;
+package com.eg.testspringcloudalibaba.bean;
 
 import lombok.Data;
 
